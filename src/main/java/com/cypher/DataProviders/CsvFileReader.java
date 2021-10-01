@@ -15,7 +15,6 @@ public class CsvFileReader {
 	public static CSVReader csvReader;
 
 	public static Iterator<Object[]> readDataFromCsv(String filePath) throws IOException {
-		System.out.println(filePath);
 		file = new File(filePath);
 		csvReader = new CSVReader(new FileReader(file));
 		String[] nextRecord;
